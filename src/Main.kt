@@ -1,3 +1,9 @@
+package com.dam1.ej51.src
+
+import com.dam1.ej51.src.clases.Departamento
+import com.dam1.ej51.src.clases.EmpleadoFijo
+import com.dam1.ej51.src.clases.EmpleadoPorHora
+
 /**
 Ejercicio 2: Sistema de Empleados y Departamentos¶
 Diseña una clase abstracta Empleado con propiedades como nombre, id, y un método abstracto
@@ -25,10 +31,21 @@ Aprender a manejar la herencia y la implementación de métodos abstractos.
 Comprender cómo diferentes subclases pueden tener implementaciones distintas de la misma
 operación (polimorfismo).
 Entender cómo agrupar múltiples objetos en una colección y realizar operaciones sobre ellos.
-
  * */
 
-
 fun main(){
-    println("Bitch")
+    val departamento = Departamento()
+
+    val emp1 = EmpleadoPorHora("Carlos", 30, "A111111", 160, 15.5)
+    val emp2 = EmpleadoFijo("Ana", 28, "B111111", 35000.0, 12)
+    val emp3 = EmpleadoPorHora("Luis", 25, "C111111", 180, 12.0)
+    val emp4 = EmpleadoFijo("Maria", 35, "D111111", 42000.0, 14)
+
+    departamento.addEmple(emp1)
+    departamento.addEmple(emp2)
+    departamento.addEmple(emp3)
+    departamento.addEmple(emp4)
+
+    departamento.mostrarEmpleados()
+    println("Salario total del departamento: %.2f".format(departamento.calcularSalario()))
 }

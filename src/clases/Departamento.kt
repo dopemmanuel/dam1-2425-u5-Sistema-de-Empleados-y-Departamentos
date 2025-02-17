@@ -11,9 +11,7 @@ class Departamento{
     }
     fun mostrarEmpleados(){
         for (empleado in empleLista){
-            println(println("${empleado.nombre} con ID-${empleado.id} tiene un salario de %.2f al mes.".format(empleado.calcularSalario())))
+            println("${empleado.nombre} con ID-${empleado.id} tiene un salario de %.2f al mes.".format(empleado.calcularSalario()))
         }
     }
-
-
 }

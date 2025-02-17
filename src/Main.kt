@@ -35,7 +35,6 @@ Entender cómo agrupar múltiples objetos en una colección y realizar operacion
 
 fun main(){
     val departamento = Departamento()
-
     val emp1 = EmpleadoPorHora("Carlos", 30, "A111111", 160, 15.5)
     val emp2 = EmpleadoFijo("Ana", 28, "B111111", 35000.0, 12)
     val emp3 = EmpleadoPorHora("Luis", 25, "C111111", 180, 12.0)

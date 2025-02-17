@@ -12,6 +12,6 @@ package com.dam1.ej51.src.clases
 open class Persona(val nombre: String, val edad: Int){
     init {
         require(nombre.isNotEmpty())
-        require(edad > 0)
+        require(edad > 0) {"edad must be greater than zero!"}
     }
 }
